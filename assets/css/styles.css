@@ -1,0 +1,371 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #000; }
+
+body * {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h2 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 80px 0 20px;
+  font-size: 25px;
+  line-height: 1.5; }
+
+h2 {
+  font-size: 20px;
+  padding: 0 0 80px; }
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.credentials {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+button {
+  border: none;
+  background: transparent; }
+
+.flowers-link-wrapper {
+  background: #000 url("../img/henry-be-IicyiaPYGGI-unsplash.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 80px; }
+
+.flowers-link {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .flowers-link__grid-item {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 20%;
+    height: 33.3%;
+    z-index: 100; }
+  .flowers-link__grid-item:hover ~ .flowers-link__content {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-size: 150%; }
+  .flowers-link__grid-item:hover ~ .flowers-link__content .flowers-link__bg {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .flowers-link__grid-item:hover:nth-of-type(5n + 1) ~ .flowers-link__content .flowers-link__bg {
+    left: 30px; }
+  .flowers-link__grid-item:hover:nth-of-type(1n + 1) ~ .flowers-link__content .flowers-link__bg {
+    bottom: 45px; }
+  .flowers-link__grid-item:hover:nth-of-type(5n + 2) ~ .flowers-link__content .flowers-link__bg {
+    left: 52.5px; }
+  .flowers-link__grid-item:hover:nth-of-type(1n + 6) ~ .flowers-link__content .flowers-link__bg {
+    bottom: 28px; }
+  .flowers-link__grid-item:hover:nth-of-type(5n + 3) ~ .flowers-link__content .flowers-link__bg {
+    left: 75px; }
+  .flowers-link__grid-item:hover:nth-of-type(1n + 11) ~ .flowers-link__content .flowers-link__bg {
+    bottom: 15px; }
+  .flowers-link__grid-item:hover:nth-of-type(5n + 4) ~ .flowers-link__content .flowers-link__bg {
+    left: 97.5px; }
+  .flowers-link__grid-item:hover:nth-of-type(1n + 16) ~ .flowers-link__content .flowers-link__bg {
+    bottom: 0px; }
+  .flowers-link__grid-item:hover:nth-of-type(5n + 5) ~ .flowers-link__content .flowers-link__bg {
+    left: 120px; }
+  .flowers-link__content {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    line-height: 60px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .flowers-link__bg {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    height: 3px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    bottom: 5px;
+    width: 60px; }
+  .flowers-link__bg-1 {
+    background: #81d875; }
+  .flowers-link__bg-2 {
+    background: #b5d875; }
+  .flowers-link__bg-3 {
+    background: #d8c975; }
+  .flowers-link__p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2; }
+
+.grass-link-wrapper {
+  background: #000 url("../img/bruno-martins-k1_UO1MGszs-unsplash.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 30px; }
+
+.grass-link {
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 1;
+  transition: all 1s ease;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 50px;
+  text-decoration: none;
+  width: auto;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1.5px; }
+  .grass-link:hover {
+    z-index: 2; }
+    .grass-link:hover p {
+      background-position: right center; }
+  .grass-link:before {
+    content: "\25CF";
+    position: absolute;
+    left: -5px;
+    border-radius: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .grass-link:after {
+    content: "\25CF";
+    position: absolute;
+    top: 0;
+    right: -6px;
+    border-radius: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .grass-link:hover:before {
+    color: red;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .grass-link:hover:after {
+    color: red;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .grass-link p {
+    -webkit-background-clip: text;
+    width: auto;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #799c5c), to(#d53369));
+    background-image: linear-gradient(to right, #000000 0%, #799c5c 51%, #d53369 100%); }
+
+.fern-button-wrapper {
+  background: #000 url("../img/nick-cooper-_1UF_3TlKcQ-unsplash.png") no-repeat center;
+  background-size: cover;
+  position: relative; }
+
+.fern-button {
+  border: 1px solid #badba4;
+  border-radius: 50px;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .fern-button__grid-item {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 39px;
+    height: 50px;
+    z-index: 1; }
+  .fern-button__grid-item:hover ~ .fern-button__content {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-size: 150%; }
+  .fern-button__grid-item:hover ~ .fern-button__content {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-size: 150%; }
+  .fern-button__grid-item:hover ~ .fern-button__content {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-size: 150%; }
+  .fern-button__grid-item:hover ~ .fern-button__content {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-size: 150%; }
+  .fern-button__grid-item:hover ~ .fern-button__content .bg {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .fern-button__grid-item:hover ~ .fern-button__content .fern-button__bg {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .fern-button__grid-item:hover:nth-of-type(5n + 1) ~ .fern-button__content .fern-button__bg {
+    left: -200px; }
+  .fern-button__grid-item:hover:nth-of-type(5n + 2) ~ .fern-button__content .fern-button__bg {
+    left: -150px; }
+  .fern-button__grid-item:hover:nth-of-type(5n + 3) ~ .fern-button__content .fern-button__bg {
+    left: -100px; }
+  .fern-button__grid-item:hover:nth-of-type(5n + 4) ~ .fern-button__content .fern-button__bg {
+    left: -50px; }
+  .fern-button__grid-item:hover:nth-of-type(5n + 5) ~ .fern-button__content .fern-button__bg {
+    left: 0px; }
+  .fern-button__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .fern-button__bg {
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease-out;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(100, 145, 115, 0.4)), color-stop(51%, #badba4), to(rgba(73, 119, 88, 0.4)));
+    background-image: linear-gradient(to right, rgba(100, 145, 115, 0.4) 0%, #badba4 51%, rgba(73, 119, 88, 0.4) 100%); }
+
+.lavender-button-wrapper {
+  background: #000 url("../img/pauline-jurkevicius-0hiCNYtH7TI-unsplash.png") no-repeat center;
+  background-size: cover;
+  position: relative; }
+
+.lavender-button {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .lavender-button__grid-item {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 1;
+    width: 20px;
+    height: 50px; }
+  .lavender-button__grid-item:hover ~ .lavender-button__content {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-size: 150%; }
+  .lavender-button__grid-item:hover ~ .lavender-button__content .lavender-button__bg {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .lavender-button__grid-item:hover:nth-of-type(1) ~ .lavender-button__content .lavender-button__bg {
+    left: 0px; }
+  .lavender-button__grid-item:hover:nth-of-type(2) ~ .lavender-button__content .lavender-button__bg {
+    left: 15px; }
+  .lavender-button__grid-item:hover:nth-of-type(3) ~ .lavender-button__content .lavender-button__bg {
+    left: 30px; }
+  .lavender-button__grid-item:hover:nth-of-type(4) ~ .lavender-button__content .lavender-button__bg {
+    left: 45px; }
+  .lavender-button__grid-item:hover:nth-of-type(5) ~ .lavender-button__content .lavender-button__bg {
+    left: 60px; }
+  .lavender-button__grid-item:hover:nth-of-type(6) ~ .lavender-button__content .lavender-button__bg {
+    left: 75px; }
+  .lavender-button__grid-item:hover:nth-of-type(7) ~ .lavender-button__content .lavender-button__bg {
+    left: 90px; }
+  .lavender-button__grid-item:hover:nth-of-type(8) ~ .lavender-button__content .lavender-button__bg {
+    left: 105px; }
+  .lavender-button__grid-item:hover:nth-of-type(9) ~ .lavender-button__content .lavender-button__bg {
+    left: 120px; }
+  .lavender-button__grid-item:hover:nth-of-type(10) ~ .lavender-button__content .lavender-button__bg {
+    left: 135px; }
+  .lavender-button__grid-item:hover:nth-of-type(11) ~ .lavender-button__content .lavender-button__bg {
+    left: 150px; }
+  .lavender-button__content {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 0;
+    width: 200px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+  .lavender-button__bg {
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(#f1a7d5 0%, rgba(187, 113, 200, 0.9) 50%, rgba(187, 113, 200, 0.1) 100%); }
+  .lavender-button__p {
+    margin-bottom: 0; }

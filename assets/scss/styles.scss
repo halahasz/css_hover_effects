@@ -1,0 +1,410 @@
+// ------------------ General --------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+body * {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 80px 0 20px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 20px;
+  padding: 0 0 80px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.credentials {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+button {
+  border: none;
+  background: transparent;
+}
+
+// ------------------ MOSS LINKS --------------------
+
+.flowers-link-wrapper {
+  background: #000 url("../img/henry-be-IicyiaPYGGI-unsplash.jpg") no-repeat
+    center;
+  background-size: cover;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+.flowers-link {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  transition: all 1s ease;
+  display: flex;
+  flex-wrap: wrap;
+  &__grid-item {
+    transition: all 1s ease;
+    width: 20%;
+    height: 33.3%;
+    z-index: 100;
+  }
+  &__grid-item:hover ~ &__content {
+    transition: all 1s ease;
+    background-size: 150%;
+  }
+  &__grid-item:hover ~ &__content &__bg {
+    transition: all 1s ease;
+  }
+  &__grid-item:hover:nth-of-type(5n + 1) ~ &__content &__bg {
+    left: 30px;
+  }
+  &__grid-item:hover:nth-of-type(1n + 1) ~ &__content &__bg {
+    bottom: 45px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 2) ~ &__content &__bg {
+    left: 52.5px;
+  }
+  &__grid-item:hover:nth-of-type(1n + 6) ~ &__content &__bg {
+    bottom: 28px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 3) ~ &__content &__bg {
+    left: 75px;
+  }
+  &__grid-item:hover:nth-of-type(1n + 11) ~ &__content &__bg {
+    bottom: 15px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 4) ~ &__content &__bg {
+    left: 97.5px;
+  }
+  &__grid-item:hover:nth-of-type(1n + 16) ~ &__content &__bg {
+    bottom: 0px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 5) ~ &__content &__bg {
+    left: 120px;
+  }
+  &__content {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    line-height: 60px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: all 1s ease;
+  }
+  &__bg {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    height: 3px;
+    transition: all 1s ease;
+    bottom: 5px;
+    width: 60px;
+  }
+  &__bg-1 {
+    background: #81d875;
+  }
+  &__bg-2 {
+    background: #b5d875;
+  }
+  &__bg-3 {
+    background: #d8c975;
+  }
+  &__p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// ------------------ GRASS LINKS --------------------
+
+.grass-link-wrapper {
+  background: #000 url("../img/bruno-martins-k1_UO1MGszs-unsplash.jpg")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.grass-link {
+  position: relative;
+  transition: all 1s ease;
+  z-index: 1;
+  transition: all 1s ease;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 50px;
+  text-decoration: none;
+  width: auto;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  &:hover {
+    z-index: 2;
+    p {
+      background-position: right center;
+    }
+  }
+  &:before {
+    content: "\25CF";
+    position: absolute;
+    left: -5px;
+    border-radius: 20px;
+    transition: all 1s ease;
+  }
+  &:after {
+    content: "\25CF";
+    position: absolute;
+    top: 0;
+    right: -6px;
+    border-radius: 20px;
+    transition: all 1s ease;
+  }
+  &:hover:before {
+    color: red;
+    transition: all 1s ease;
+  }
+  &:hover:after {
+    color: red;
+    transition: all 1s ease;
+  }
+  p {
+    -webkit-background-clip: text;
+    width: auto;
+    transition: all 1s ease;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% auto;
+    background-image: linear-gradient(
+      to right,
+      #000000 0%,
+      #799c5c 51%,
+      #d53369 100%
+    );
+  }
+}
+
+// ------------------ FERN BUTTON --------------------
+
+.fern-button-wrapper {
+  background: #000 url("../img/nick-cooper-_1UF_3TlKcQ-unsplash.png") no-repeat
+    center;
+  background-size: cover;
+  position: relative;
+}
+.fern-button {
+  border: 1px solid #badba4;
+  border-radius: 50px;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: all 1s ease;
+  display: flex;
+  flex-wrap: wrap;
+  &__grid-item {
+    transition: all 1s ease;
+    width: 39px;
+    height: 50px;
+    z-index: 1;
+  }
+  &__grid-item:hover ~ &__content {
+    transition: all 1s ease;
+    background-size: 150%;
+  }
+  &__grid-item:hover ~ &__content {
+    transition: all 1s ease;
+    background-size: 150%;
+  }
+  &__grid-item:hover ~ &__content {
+    transition: all 1s ease;
+    background-size: 150%;
+  }
+  &__grid-item:hover ~ &__content {
+    transition: all 1s ease;
+    background-size: 150%;
+  }
+  &__grid-item:hover ~ &__content .bg {
+    transition: all 1s ease;
+  }
+  &__grid-item:hover ~ &__content &__bg {
+    transition: all 1s ease;
+  }
+  &__grid-item:hover:nth-of-type(5n + 1) ~ &__content &__bg {
+    left: -200px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 2) ~ &__content &__bg {
+    left: -150px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 3) ~ &__content &__bg {
+    left: -100px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 4) ~ &__content &__bg {
+    left: -50px;
+  }
+  &__grid-item:hover:nth-of-type(5n + 5) ~ &__content &__bg {
+    left: 0px;
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: all 1s ease;
+  }
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease-out;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to right,
+      rgba(100, 145, 115, 0.4) 0%,
+      #badba4 51%,
+      rgba(73, 119, 88, 0.4) 100%
+    );
+  }
+}
+
+// ------------------ LAVENDER BUTTON --------------------
+
+.lavender-button-wrapper {
+  background: #000 url("../img/pauline-jurkevicius-0hiCNYtH7TI-unsplash.png")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.lavender-button {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  transition: all 1s ease;
+  display: flex;
+  &__grid-item {
+    transition: all 1s ease;
+    z-index: 1;
+    width: 20px;
+    height: 50px;
+  }
+  &__grid-item:hover ~ &__content {
+    transition: all 1s ease;
+    background-size: 150%;
+  }
+  &__grid-item:hover ~ &__content &__bg {
+    transition: all 1s ease;
+  }
+  &__grid-item:hover:nth-of-type(1) ~ &__content &__bg {
+    left: 0px;
+  }
+  &__grid-item:hover:nth-of-type(2) ~ &__content &__bg {
+    left: 15px;
+  }
+  &__grid-item:hover:nth-of-type(3) ~ &__content &__bg {
+    left: 30px;
+  }
+  &__grid-item:hover:nth-of-type(4) ~ &__content &__bg {
+    left: 45px;
+  }
+  &__grid-item:hover:nth-of-type(5) ~ &__content &__bg {
+    left: 60px;
+  }
+  &__grid-item:hover:nth-of-type(6) ~ &__content &__bg {
+    left: 75px;
+  }
+  &__grid-item:hover:nth-of-type(7) ~ &__content &__bg {
+    left: 90px;
+  }
+  &__grid-item:hover:nth-of-type(8) ~ &__content &__bg {
+    left: 105px;
+  }
+  &__grid-item:hover:nth-of-type(9) ~ &__content &__bg {
+    left: 120px;
+  }
+  &__grid-item:hover:nth-of-type(10) ~ &__content &__bg {
+    left: 135px;
+  }
+  &__grid-item:hover:nth-of-type(11) ~ &__content &__bg {
+    left: 150px;
+  }
+  &__content {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 0;
+    width: 200px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: all 1s ease;
+  }
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    transition: all 1s ease;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(
+      #f1a7d5 0%,
+      rgba(187, 113, 200, 0.9) 50%,
+      rgba(187, 113, 200, 0.1) 100%
+    );
+  }
+  &__p {
+    margin-bottom: 0;
+  }
+}
