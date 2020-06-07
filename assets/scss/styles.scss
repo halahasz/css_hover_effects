@@ -31,9 +31,10 @@ h2 {
 }
 .button-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
   align-items: center;
+  height: 100vh;
 }
 .credentials {
   position: absolute;
@@ -45,24 +46,34 @@ button {
   background: transparent;
 }
 
-// ------------------ MOSS LINKS --------------------
+// ------------------ FLOWERS LINKS --------------------
 
 .flowers-link-wrapper {
   background: #000 url("../img/henry-be-IicyiaPYGGI-unsplash.jpg") no-repeat
     center;
   background-size: cover;
   position: relative;
-  align-items: flex-start;
   padding-top: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 .flowers-link {
   position: relative;
+  margin: 15px;
   cursor: pointer;
   width: 150px;
   height: 60px;
   transition: all 1s ease;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 700px) {
+    margin-bottom: 15px;
+  }
   &__grid-item {
     transition: all 1s ease;
     width: 20%;
@@ -151,8 +162,14 @@ button {
     no-repeat center;
   background-size: cover;
   position: relative;
-  align-items: flex-start;
   padding-top: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 .grass-link {
   position: relative;
@@ -169,6 +186,9 @@ button {
   color: #000;
   font-size: 16px;
   letter-spacing: 1.5px;
+  @media (max-width: 700px) {
+    width: 230px;
+  }
   &:hover {
     z-index: 2;
     p {
@@ -216,7 +236,7 @@ button {
 // ------------------ FERN BUTTON --------------------
 
 .fern-button-wrapper {
-  background: #000 url("../img/nick-cooper-_1UF_3TlKcQ-unsplash.png") no-repeat
+  background: #000 url("../img/nick-cooper-_1UF_3TlKcQ-unsplash.jpg") no-repeat
     center;
   background-size: cover;
   position: relative;
@@ -313,7 +333,7 @@ button {
 // ------------------ LAVENDER BUTTON --------------------
 
 .lavender-button-wrapper {
-  background: #000 url("../img/pauline-jurkevicius-0hiCNYtH7TI-unsplash.png")
+  background: #000 url("../img/pauline-jurkevicius-0hiCNYtH7TI-unsplash.jpg")
     no-repeat center;
   background-size: cover;
   position: relative;
